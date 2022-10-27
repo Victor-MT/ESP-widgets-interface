@@ -1,0 +1,50 @@
+const char headerTemp[] PROGMEM = R"=====(
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <title>ESP Web Server</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <style>
+            .container {
+                width: 100%;
+                height: fit-content;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="app row">
+            <div class="container">
+                <div class="jumbotron">
+                    <h1> ESP Web Server </h1>
+                    <p> Welcome to ESP Web Server </p>
+                </div>
+            </div>
+            <!-- %%APP%% -->
+        </div>
+    </body>
+    </html>
+  )=====";
+
+const char buttonTemp[] PROGMEM = R"=====(
+  <!------------------- BUTTON LABEL ---------------------->
+  <style>
+      .button-custom{
+          padding: 10px;
+          vertical-align: text-top;
+      }
+  </style>
+  <div class="container col-sm-4">
+      <label class="well button-custom">%%BUTTON_LABEL%%</label>
+      <button type="button" class="btn btn-default button-custom">
+          %%BUTTON_NAME%%
+      </button>
+  </div>
+ )=====";
